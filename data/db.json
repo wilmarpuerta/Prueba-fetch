@@ -1,0 +1,76 @@
+{
+  "admins": [
+    {
+      "id": "ff15",
+      "name": "Admin Outlet",
+      "email": "admin@oulet.com",
+      "password": "password"
+    },
+    {
+      "name": "Anthony",
+      "email": "anthony2@gmail.comf",
+      "password": "b8pkbg",
+      "id": "aec8"
+    },
+    {
+      "id": "ac22",
+      "name": "wilmar",
+      "email": "admin@gmail.com",
+      "password": "rfd534"
+    }
+  ],
+  "brands": [
+    {
+      "id": "f7f16",
+      "name": "Totto",
+      "local": "127",
+      "floor": "1",
+      "scedule": [
+        "Lunes - sabado: 10:00 a.m. - 7:00 p.m",
+        "Domingo y festivos: 10:00 a.m. - 6:00 p.m"
+      ],
+      "logo": "https://i.ibb.co/j4LGSpH/totto-medellin.jpg",
+      "website": "https://co.totto.com/",
+      "description": "Visita la tienda online de Totto medellin y descubre nuestro catálogo! Garantía de especialistas en mochilas, maletas y accesorios desde hace más de 25 años."
+    },
+    {
+      "id": "fdf16",
+      "name": "Totto",
+      "local": "127",
+      "floor": "1",
+      "scedule": [
+        "Lunes - sabado: 10:00 a.m. - 7:00 p.m",
+        "Domingo y festivos: 10:00 a.m. - 6:00 p.m"
+      ],
+      "logo": "https://i.ibb.co/j4LGSpH/totto-medellin.jpg",
+      "website": "https://co.totto.com/",
+      "description": "Visita la tienda online de Totto medellin y descubre nuestro catálogo! Garantía de especialistas en mochilas, maletas y accesorios desde hace más de 25 años."
+    }
+  ],
+  "pqrs": [
+    {
+      "id": "4188",
+      "type": "Queja",
+      "email": "dfdsf",
+      "mensaje": "dsfdf"
+    },
+    {
+      "id": "0c99",
+      "type": "Queja",
+      "email": "sd",
+      "mensaje": "ds"
+    },
+    {
+      "id": "961f",
+      "type": "Reclamo",
+      "email": "sdada",
+      "mensaje": "dgsdf"
+    },
+    {
+      "id": "deee",
+      "type": "Queja",
+      "email": "dfs",
+      "mensaje": "dsf"
+    }
+  ]
+}
