@@ -1,4 +1,26 @@
 
+// Funcion para comprobar si esta registrado
+
+const user = localStorage.getItem("admin")
+if (!user) {
+    location.href = "../index.html"
+}
+
+
+// Funcion para cambiar la cantidad de registros
+function cantidadRegistro(url, category) {
+    const idCant = document.getElementById(`${category}`)
+
+    fetch(`http://localhost:3000/${url}`)
+        .then(res => res.json())
+        .then(data => {
+            idCant.textContent = data.length;
+        })
+}
+cantidadRegistro("admins", "cantAdministradores");
+cantidadRegistro("brands", "cantMarcas");
+cantidadRegistro("pqrs", "cantPQRS");
+
 // Funcion de los buscadores
 
 // Buscador por id

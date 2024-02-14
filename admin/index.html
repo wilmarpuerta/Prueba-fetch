@@ -158,22 +158,6 @@
     <script src="../template/js/vendor.min.js"></script>
     <script src="../template/js/app.min.js"></script>
     <script src="../js/main.js"></script>
-    <script>
-        // Funcion para cambiar la cantidad de registros
-        function cantidadRegistro(url, category) {
-            const idCant = document.getElementById(`${category}`)
-
-            fetch(`http://localhost:3000/${url}`)
-                .then(res => res.json())
-                .then(data => {
-                    idCant.textContent = data.length;
-                })
-        }
-        cantidadRegistro("admins", "cantAdministradores");
-        cantidadRegistro("brands", "cantMarcas");
-        cantidadRegistro("pqrs", "cantPQRS");
-    </script>
-
 </body>
 
 </html>

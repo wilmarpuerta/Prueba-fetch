@@ -17,6 +17,12 @@
       "name": "wilmar",
       "email": "admin@gmail.com",
       "password": "rfd534"
+    },
+    {
+      "id": "e355",
+      "name": "kevin",
+      "email": "Your Name",
+      "password": "b7c5vo"
     }
   ],
   "brands": [
@@ -37,24 +43,6 @@
       "scedule": "lunes a viernes 99c - ddld, siushiush",
       "website": "hola",
       "id": "3820"
-    },
-    {
-      "id": "0a78",
-      "logo": "sda",
-      "name": "totto",
-      "local": "dsa",
-      "floor": "dsa",
-      "scedule": "sd",
-      "website": "asd"
-    },
-    {
-      "logo": "dsfd",
-      "name": "Totto",
-      "local": "dsf",
-      "floor": "fds",
-      "scedule": "fds",
-      "website": "fds",
-      "id": "e9de"
     }
   ],
   "pqrs": [
