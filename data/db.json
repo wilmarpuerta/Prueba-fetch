@@ -21,30 +21,40 @@
   ],
   "brands": [
     {
-      "id": "f7f16",
+      "logo": "https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067",
       "name": "Totto",
       "local": "127",
       "floor": "1",
-      "scedule": [
-        "Lunes - sabado: 10:00 a.m. - 7:00 p.m",
-        "Domingo y festivos: 10:00 a.m. - 6:00 p.m"
-      ],
-      "logo": "https://i.ibb.co/j4LGSpH/totto-medellin.jpg",
+      "scedule": "Lunes - sabado: 10:00 a.m. - 8:00 p.m,Domingo y festivos: 10:00 a.m. - 6:00 p.m",
       "website": "https://co.totto.com/",
-      "description": "Visita la tienda online de Totto medellin y descubre nuestro catálogo! Garantía de especialistas en mochilas, maletas y accesorios desde hace más de 25 años."
+      "id": "f7f16"
     },
     {
-      "id": "fdf16",
-      "name": "Totto",
+      "logo": "https://www.lavanguardia.com/files/image_449_220/uploads/2021/06/07/60be17e39ecfa.jpeg",
+      "name": "hola",
       "local": "127",
-      "floor": "1",
-      "scedule": [
-        "Lunes - sabado: 10:00 a.m. - 7:00 p.m",
-        "Domingo y festivos: 10:00 a.m. - 6:00 p.m"
-      ],
-      "logo": "https://i.ibb.co/j4LGSpH/totto-medellin.jpg",
-      "website": "https://co.totto.com/",
-      "description": "Visita la tienda online de Totto medellin y descubre nuestro catálogo! Garantía de especialistas en mochilas, maletas y accesorios desde hace más de 25 años."
+      "floor": "2",
+      "scedule": "lunes a viernes 99c - ddld, siushiush",
+      "website": "hola",
+      "id": "3820"
+    },
+    {
+      "id": "0a78",
+      "logo": "sda",
+      "name": "totto",
+      "local": "dsa",
+      "floor": "dsa",
+      "scedule": "sd",
+      "website": "asd"
+    },
+    {
+      "logo": "dsfd",
+      "name": "Totto",
+      "local": "dsf",
+      "floor": "fds",
+      "scedule": "fds",
+      "website": "fds",
+      "id": "e9de"
     }
   ],
   "pqrs": [

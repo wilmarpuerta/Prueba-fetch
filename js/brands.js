@@ -23,6 +23,7 @@ fetch("http://localhost:3000/brands")
 
             const idCell = document.createElement("td");
             idCell.textContent = `${brand.id}`;
+            idCell.classList.add("ID")
             fila.appendChild(idCell);
 
             // Creacion de celda del logo
@@ -38,18 +39,21 @@ fetch("http://localhost:3000/brands")
 
             const nameCell = document.createElement("td");
             nameCell.textContent = `${brand.name}`;
+            nameCell.classList = "brand";
             fila.appendChild(nameCell);
 
             // Creacion de celda del local
 
             const localCell = document.createElement("td");
             localCell.textContent = `${brand.local}`;
+            localCell.classList = "local";
             fila.appendChild(localCell);
 
             // Creacion de celda del piso
 
             const floorCell = document.createElement("td");
             floorCell.textContent = `${brand.floor}`;
+            floorCell.classList = "floor";
             fila.appendChild(floorCell);
 
             // Creacion de celda del horarios
@@ -150,7 +154,7 @@ function editarAdmin(element) {
         .then(data => {
             titleModal.textContent = "Editar Brand";
             modalBody.innerHTML = `
-        <label for="">Logo</label>
+        <label for="">URL del Logo</label>
         <input id="logo" type="text" class="form-control" value="${data.logo}">
         <label for="">Nombre</label>
         <input id="name" type="text" class="form-control" value="${data.name}">
@@ -256,3 +260,46 @@ function crearBrand() {
 
 // Funcion de los buscadores
 
+// Buscador por id
+document.addEventListener('keyup', e => {
+    if (e.target.matches('#searchId')) {
+        document.querySelectorAll('.ID').forEach(id => {
+            id.textContent.toLowerCase().includes(e.target.value)
+                ? id.parentElement.style = "display: table-row;"
+                : id.parentElement.style = "display: none;"
+        })
+    }
+});
+
+// Buscador por name
+document.addEventListener('keyup', e => {
+    if (e.target.matches('#searchName')) {
+        document.querySelectorAll('.brand').forEach(brand => {
+            brand.textContent.toLowerCase().includes(e.target.value)
+                ? brand.parentElement.style = "display: table-row;"
+                : brand.parentElement.style = "display: none;"
+        })
+    }
+});
+
+// Buscador por local
+document.addEventListener('keyup', e => {
+    if (e.target.matches('#searchLocal')) {
+        document.querySelectorAll('.local').forEach(local => {
+            local.textContent.toLowerCase().includes(e.target.value)
+                ? local.parentElement.style = "display: table-row;"
+                : local.parentElement.style = "display: none;"
+        })
+    }
+});
+
+// Buscador por piso
+document.addEventListener('keyup', e => {
+    if (e.target.matches('#searchFloor')) {
+        document.querySelectorAll('.floor').forEach(floor => {
+            floor.textContent.toLowerCase().includes(e.target.value)
+                ? floor.parentElement.style = "display: table-row;"
+                : floor.parentElement.style = "display: none;"
+        })
+    }
+});
