@@ -21,7 +21,6 @@ fetch(`http://localhost:3000/admins/${localStorage.admin}`)
 let cerrarSesion = document.getElementById("cerrarSesion");
 
 cerrarSesion.addEventListener("click", () => {
-    console.log("zapa")
     localStorage.clear();
 })
 
