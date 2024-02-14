@@ -6,6 +6,26 @@ if (!user) {
     location.href = "../index.html"
 }
 
+// Funcion de cambio de nombre por admin
+
+let nameAdmin = document.getElementById("nameAdmin");
+
+fetch(`http://localhost:3000/admins/${localStorage.admin}`)
+    .then(res => res.json())
+    .then(data => {
+        nameAdmin.textContent = data.name;
+    })
+
+// Funcion de cerrar sesion
+
+let cerrarSesion = document.getElementById("cerrarSesion");
+
+cerrarSesion.addEventListener("click", () => {
+    console.log("zapa")
+    localStorage.clear();
+})
+
+
 
 // Funcion para cambiar la cantidad de registros
 function cantidadRegistro(url, category) {

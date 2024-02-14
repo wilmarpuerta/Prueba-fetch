@@ -17,12 +17,6 @@
       "name": "wilmar",
       "email": "admin@gmail.com",
       "password": "rfd534"
-    },
-    {
-      "id": "e355",
-      "name": "kevin",
-      "email": "Your Name",
-      "password": "b7c5vo"
     }
   ],
   "brands": [
@@ -40,18 +34,21 @@
       "name": "hola",
       "local": "127",
       "floor": "2",
-      "scedule": "lunes a viernes 99c - ddld, siushiush",
+      "scedule": "lunes a viernes 99c - ddld, ",
       "website": "hola",
       "id": "3820"
+    },
+    {
+      "id": "1054",
+      "logo": "https://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg",
+      "name": "test",
+      "local": "214",
+      "floor": "3",
+      "scedule": "lunes a viernes",
+      "website": "https://www.google.com/search?sca_esv=725712b13be26739&rlz=1C1VDKB_esCO989CO989&sxsrf=ACQVn08HSAk8xTJcZ7pv9KR0s-YdL9lB0w:1707942825818&q=perro&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiotbfr1quEAxUimWoFHbdOA04Q0pQJegQICxAB&biw=1366&bih=679&dpr=1#imgrc=Ww-3jy6VPgP9FM"
     }
   ],
   "pqrs": [
-    {
-      "id": "4188",
-      "type": "Queja",
-      "email": "dfdsf",
-      "mensaje": "dsfdf"
-    },
     {
       "id": "0c99",
       "type": "Queja",
@@ -69,6 +66,12 @@
       "type": "Queja",
       "email": "dfs",
       "mensaje": "dsf"
+    },
+    {
+      "id": "48b1",
+      "type": "Petición",
+      "email": "wilmarpuerta2@gmail.com",
+      "mensaje": "Arreglar las brands del home"
     }
   ]
 }

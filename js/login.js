@@ -36,7 +36,7 @@ bntLogin.addEventListener("click", () => {
             let adminExistente = data.find(admins => admins.email === email.value || admins.password === password.value);
             if (adminExistente) {
                 if (email.value == adminExistente.email && password.value == adminExistente.password) {
-                    localStorage.setItem("admin", data.id)
+                    localStorage.setItem("admin", adminExistente.id)
                     location.href = "./admin/index.html";
                 }
                 else {
