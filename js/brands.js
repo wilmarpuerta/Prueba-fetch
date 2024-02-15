@@ -187,19 +187,28 @@ function editaBrands(element) {
     if (inputLogo.value == "" || inputNombre.value == "" || inputLocal.value == "" || inputPiso.value == "" || inputHorarios.value == "" || inputSitioWeb.value == "") {
         alert("No dejes campos vacios")
     } else {
-        fetch(`http://localhost:3000/brands/${id}`, {
-            method: 'PUT',
-            headers: {
-                "Content-type": "aplication/json"
-            },
-            body: JSON.stringify({ logo: inputLogo.value, name: inputNombre.value, local: inputLocal.value, floor: inputPiso.value, scedule: inputHorarios.value, website: inputSitioWeb.value }),
-        })
-    }
+        fetch("http://localhost:3000/brands")
+            .then(res => res.json())
+            .then(data => {
 
+                let brandExistente = data.find(brands => brands.name = inputNombre.value);
+                if (!brandExistente) {
+                    fetch(`http://localhost:3000/brands/${id}`, {
+                        method: 'PUT',
+                        headers: {
+                            "Content-type": "aplication/json"
+                        },
+                        body: JSON.stringify({ logo: inputLogo.value, name: inputNombre.value, local: inputLocal.value, floor: inputPiso.value, scedule: inputHorarios.value, website: inputSitioWeb.value }),
+                    })
+                } else {
+                    alert("Ya existe la brand");
+                }
+            })
+    }
 }
 
 
-// Funcion para crear un Admin 
+// Funcion para crear una brand 
 
 function crearBrandModal() {
 
@@ -240,7 +249,7 @@ function crearBrand() {
             if (inputLogo.value == "" || inputBrand.value == "" || inputLocal.value == "" || inputPiso.value == "" || inputHorarios.value == "" || inputWebsite.value == "") {
                 alert("No dejes campos vacios")
             } else {
-                let brandExistente = data.find(brands => brands.name == inputBrand.value);
+                let brandExistente = data.find(brands => brands.name = inputBrand.value);
                 if (brandExistente) {
                     alert("El brand ya existe en la base de datos")
                 }

@@ -141,18 +141,28 @@ function saveChanges(element) {
     const inputEmail = document.getElementById("email");
     const password = Math.random().toString(32).substring(7);
 
-    if (inputName.value == "" || inputEmail.value == "") {
-        alert("No dejes campos vacios")
-    } else {
-        fetch(`http://localhost:3000/admins/${id}`, {
-            method: 'PUT',
-            headers: {
-                "Content-type": "aplication/json"
-            },
-            body: JSON.stringify({ name: inputName.value, email: inputEmail.value, password: password }),
-        })
-    }
+    fetch('http://localhost:3000/admins')
+        .then(res => res.json())
+        .then(data => {
+            if (inputName.value == "" || inputEmail.value == "") {
+                alert("No dejes campos vacios")
+            } else {
+                let brandExistente = data.find(admins => admins.email == inputEmail.value);
+                if (brandExistente) {
+                    alert("El correo del admin ya existe en la base de datos")
+                }
+                else {
+                    fetch(`http://localhost:3000/admins/${id}`, {
+                        method: 'PUT',
+                        headers: {
+                            "Content-type": "aplication/json"
+                        },
+                        body: JSON.stringify({ name: inputName.value, email: inputEmail.value, password: password }),
+                    })
 
+                }
+            }
+        })
 }
 
 

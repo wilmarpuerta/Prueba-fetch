@@ -7,9 +7,9 @@
       "password": "password"
     },
     {
-      "name": "Anthony",
-      "email": "anthony2@gmail.comf",
-      "password": "b8pkbg",
+      "name": "Anthony2",
+      "email": "anthony2@gmail.com",
+      "password": "e594ng",
       "id": "aec8"
     },
     {
@@ -31,21 +31,39 @@
     },
     {
       "logo": "https://www.lavanguardia.com/files/image_449_220/uploads/2021/06/07/60be17e39ecfa.jpeg",
-      "name": "hola",
+      "name": "test",
       "local": "127",
       "floor": "2",
-      "scedule": "lunes a viernes 99c - ddld, ",
+      "scedule": "Lunes - sabado: 10:00 a.m. - 8:00 p.m,Domingo y festivos: 10:00 a.m. - 6:00 p.m",
       "website": "hola",
       "id": "3820"
     },
     {
-      "id": "1054",
       "logo": "https://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg",
       "name": "test",
       "local": "214",
       "floor": "3",
-      "scedule": "lunes a viernes",
-      "website": "https://www.google.com/search?sca_esv=725712b13be26739&rlz=1C1VDKB_esCO989CO989&sxsrf=ACQVn08HSAk8xTJcZ7pv9KR0s-YdL9lB0w:1707942825818&q=perro&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiotbfr1quEAxUimWoFHbdOA04Q0pQJegQICxAB&biw=1366&bih=679&dpr=1#imgrc=Ww-3jy6VPgP9FM"
+      "scedule": "Lunes - sabado: 10:00 a.m. - 8:00 p.m,Domingo y festivos: 10:00 a.m. - 6:00 p.m",
+      "website": "https://www.google.com/search?sca_esv=725712b13be26739&rlz=1C1VDKB_esCO989CO989&sxsrf=ACQVn08HSAk8xTJcZ7pv9KR0s-YdL9lB0w:1707942825818&q=perro&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiotbfr1quEAxUimWoFHbdOA04Q0pQJegQICxAB&biw=1366&bih=679&dpr=1#imgrc=Ww-3jy6VPgP9FM",
+      "id": "1054"
+    },
+    {
+      "logo": "csa",
+      "name": "totto",
+      "local": "125",
+      "floor": "3",
+      "scedule": "Lunes - sabado: 10:00 a.m. - 8:00 p.m,Domingo y festivos: 10:00 a.m. - 6:00 p.m",
+      "website": "saf",
+      "id": "3bea"
+    },
+    {
+      "logo": "ads",
+      "name": "totto2",
+      "local": "123",
+      "floor": "2",
+      "scedule": "Lunes - sabado: 10:00 a.m. - 8:00 p.m,Domingo y festivos: 10:00 a.m. - 6:00 p.m",
+      "website": "dsa",
+      "id": "a92c"
     }
   ],
   "pqrs": [
