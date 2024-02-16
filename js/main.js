@@ -22,6 +22,12 @@ let cerrarSesion = document.getElementById("cerrarSesion");
 
 cerrarSesion.addEventListener("click", () => {
     localStorage.clear();
+    let ruta = window.location.pathname;
+    if (ruta == "/admin/admins/index.html" || ruta == "/admin/brands/index.html" || ruta == "/admin/pqrs/index.html") {
+        location.href = "../../index.html"
+    } else {
+        location.href = "../index.html"
+    }
 })
 
 
